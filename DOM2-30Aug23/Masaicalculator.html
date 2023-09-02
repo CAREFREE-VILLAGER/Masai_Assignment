@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Calculator</title>
+  <style>
+    .calculator {
+      width: 220px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 0 auto;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    .calculator input {
+      width: 90%;
+      margin: 0 auto;
+      display: block; 
+      margin-bottom: 10px;
+      box-shadow: 0 2px 4px rgba(15, 14, 14, 0.2);
+      text-align: center;
+      border: none;
+      outline: none;
+    }
+    .calculator button {
+      width: 50px;
+      height: 50px;
+      margin: 5px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+      background-color: #fff;
+      border: none;
+    }
+    .calculator .symbol-button {
+      background-color: #000;
+      color: #fff;
+    }
+    .calculator .red-button {
+      background-color: #ff0000;
+      color: #fff;
+    }
+    .calculator .row {
+      display: flex;
+    }
+    .calculator .row:last-child {
+      margin-bottom: 0;
+    }
+    
+    .calculator-heading {
+      text-align: center;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="calculator-heading">Masai Calculator</h1>
+  <div class="calculator">
+    <input type="text" id="display" readonly>
+    <div class="row">
+      <button onclick="appendToDisplay('7')">7</button>
+      <button onclick="appendToDisplay('8')">8</button>
+      <button onclick="appendToDisplay('9')">9</button>
+      <button onclick="appendToDisplay('+')" class="symbol-button">+</button>
+    </div>
+    <div class="row">
+      <button onclick="appendToDisplay('4')">4</button>
+      <button onclick="appendToDisplay('5')">5</button>
+      <button onclick="appendToDisplay('6')">6</button>
+      <button onclick="appendToDisplay('-')" class="symbol-button">-</button>
+    </div>
+    <div class="row">
+      <button onclick="appendToDisplay('1')">1</button>
+      <button onclick="appendToDisplay('2')">2</button>
+      <button onclick="appendToDisplay('3')">3</button>
+      <button onclick="appendToDisplay('*')" class="symbol-button">*</button>
+    </div>
+    <div class="row">
+      <button onclick="clearDisplay()" class="red-button">C</button>
+      <button onclick="appendToDisplay('0')">0</button>
+      <button onclick="appendToDisplay('/')" class="symbol-button">/</button>
+      <button onclick="calculate()" class="symbol-button">=</button>
+    </div>
+  </div>
+
+  <script>
+    function appendToDisplay(value) {
+      document.getElementById('display').value += value;
+    }
+
+    function clearDisplay() {
+      document.getElementById('display').value = '';
+    }
+
+    function calculate() {
+      var display = document.getElementById('display');
+      try {
+        display.value = eval(display.value);
+      } catch (error) {
+        display.value = 'Error';
+      }
+    }
+  </script>
+</body>
+</html>
