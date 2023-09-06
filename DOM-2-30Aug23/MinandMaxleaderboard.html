@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <style>
+        /* Add CSS styles to create the grid */
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Leaderboard</h1>
+    <div>
+        <h2>Score: <span id="score">0</span></h2>
+    </div>
+    <div>
+        <h3>Min: <span id="min">0</span></h3>
+        <h3>Max: <span id="max">0</span></h3>
+    </div>
+    <div class="button-container">
+        <button onclick="addNumber(1)">1</button>
+        <button onclick="addNumber(2)">2</button>
+        <button onclick="addNumber(3)">3</button>
+        <button onclick="addNumber(4)">4</button>
+        <button onclick="addNumber(5)">5</button>
+        <button onclick="addNumber(6)">6</button>
+        <button onclick="addNumber(7)">7</button>
+        <button onclick="addNumber(8)">8</button>
+        <button onclick="addNumber(9)">9</button>
+    </div>
+    <div>
+        <button onclick="enterScore()">ENTER</button>
+        <button onclick="resetScore()">RESET</button>
+    </div>
+
+    <script>
+        let currentScore = '';
+        let minScore = Infinity;
+        let maxScore = -Infinity;
+
+        function addNumber(number) {
+            currentScore += number;
+            document.getElementById('score').textContent = currentScore;
+        }
+
+        function enterScore() {
+            const score = parseInt(currentScore);
+            if (!isNaN(score)) {
+                if (score < minScore) {
+                    minScore = score;
+                    document.getElementById('min').textContent = minScore;
+                }
+                if (score > maxScore) {
+                    maxScore = score;
+                    document.getElementById('max').textContent = maxScore;
+                }
+            }
+            resetScore();
+        }
+
+        function resetScore() {
+            currentScore = '';
+            document.getElementById('score').textContent = currentScore;
+        }
+    </script>
+</body>
+</html>
