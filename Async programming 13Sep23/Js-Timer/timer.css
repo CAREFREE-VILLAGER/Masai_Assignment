@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.timer-input {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.timer-input input {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.timer-controls {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.timer-controls button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.timer-display {
+    margin: 20px;
+    font-size: 24px;
+}
