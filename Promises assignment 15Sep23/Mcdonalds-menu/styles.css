@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+#orderButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+}
+#foodItems {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.foodItem {
+    margin: 10px;
+}
+.foodImage {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #ffcc00;
+    border-radius: 10px;
+    display: none;
+}
+.orderID {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+    background-color: #ffcc00;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: none;
+}
