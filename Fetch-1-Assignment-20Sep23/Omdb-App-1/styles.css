@@ -1,0 +1,201 @@
+/* styles.css */
+
+/* Style for the results container */
+#resultsContainer {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the movie title */
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style for movie details */
+p {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Style for the movie poster */
+img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+#searchInput {
+    padding: 10px;
+    font-size: 18px;
+}
+
+#searchButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #555;
+}
+
+#movieInfo {
+    text-align: left;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+body {
+    background-color: #ccbebe; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.main-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+#movieTitle {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#searchButton {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #0056b3; 
+}
+
+
+.results-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.movie-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: calc(50% - 10px); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.movie-container:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.pagination-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button#prevPageButton, button#nextPageButton {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+button#prevPageButton:hover, button#nextPageButton:hover {
+    background-color: #0056b3; 
+}
