@@ -4,7 +4,7 @@ const productContainer = document.querySelector(".product-list");
 
 let products = [];
 
-// Fetch products from the API
+
 fetch("https://fakestoreapi.com/products")
     .then(response => response.json())
     .then(data => {
@@ -15,11 +15,11 @@ fetch("https://fakestoreapi.com/products")
         console.error("Error fetching products:", error);
     });
 
-// Event listeners for search and sort
+
 searchInput.addEventListener("input", handleSearch);
 sortSelect.addEventListener("change", handleSort);
 
-// Display products on the DOM
+
 function displayProducts(products) {
     productContainer.innerHTML = "";
 
@@ -36,7 +36,7 @@ function displayProducts(products) {
     });
 }
 
-// Handle search input
+
 function handleSearch() {
     const searchTerm = searchInput.value.toLowerCase();
     const filteredProducts = products.filter(product =>
@@ -45,7 +45,7 @@ function handleSearch() {
     displayProducts(filteredProducts);
 }
 
-// Handle sort selection
+
 function handleSort() {
     const sortOption = sortSelect.value;
     let sortedProducts = [...products];
