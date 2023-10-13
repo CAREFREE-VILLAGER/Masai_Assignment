@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Movie Search</title>
+</head>
+<body>
+    <h1>Movie Search</h1>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for movies">
+        <button id="searchButton">Search</button>
+        <div id="searchResults"></div>
+    </div>
+
+    <!-- Add a container for movie details -->
+    <div id="movieDetails" style="display: none;">
+        <h2 id="movieTitle"></h2>
+        <img id="moviePoster" src="" alt="Movie Poster">
+        <p id="movieYear"></p>
+        <p id="moviePlot"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
