@@ -1,0 +1,74 @@
+/* App.js */
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /* Todo.jsx */
+  h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333; /* Text color */
+  }
+  
+  input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc; /* Input border */
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+  }
+  
+  /* TodoList.jsx */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* TodoItem.jsx */
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc; /* List item border */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+  
+  span {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333; /* Text color */
+  }
+  
+  button {
+    background-color: #dc3545; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #bb2c3b; /* Button background color on hover */
+  }
+  
