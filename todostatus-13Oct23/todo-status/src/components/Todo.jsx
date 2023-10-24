@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import TodoList from './TodoList'; // Import TodoList
-import TodoItem from './TodoItem'; // Import TodoItem
+import TodoList from './TodoList';
+import TodoItem from './TodoItem';
 
 function Todo() {
   const [task, setTask] = useState('');
@@ -26,7 +26,7 @@ function Todo() {
         onChange={handleTaskChange}
       />
       <button onClick={addTask}>Add</button>
-      <TodoList tasks={tasks} /> {/* Use TodoList component here */}
+      <TodoList tasks={tasks} /> {}
     </div>
   );
 }
